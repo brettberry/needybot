@@ -1,0 +1,7 @@
+version: '2'
+services:
+  needybot:
+    build: .
+    volumes:
+      - $PWD/needybot-speech:/usr/src/needybot/needybot-speech
+      - $PWD/needybot-msgs:/usr/src/needybot/needybot-msgs
