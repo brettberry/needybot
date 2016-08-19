@@ -5,3 +5,4 @@ services:
     volumes:
       - $PWD/needybot-speech:/usr/src/needybot/needybot-speech
       - $PWD/needybot-msgs:/usr/src/needybot/needybot-msgs
+      - $PWD/test.py:/usr/src/needybot/test.py
