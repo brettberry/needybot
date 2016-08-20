@@ -16,6 +16,9 @@
 		12AE45C31D6366F200D37CFD /* speechTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE45C21D6366F200D37CFD /* speechTestUITests.swift */; };
 		12AE45D11D6368C200D37CFD /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE45D01D6368C200D37CFD /* constants.swift */; };
 		12AE45D31D63693C00D37CFD /* actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE45D21D63693C00D37CFD /* actions.swift */; };
+		12AE45DF1D681AD700D37CFD /* SpeechSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12AE45DE1D681AD700D37CFD /* SpeechSDK.framework */; };
+		12AE45E01D681ADD00D37CFD /* SpeechSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12AE45DE1D681AD700D37CFD /* SpeechSDK.framework */; };
+		12AE45E11D681ADD00D37CFD /* SpeechSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 12AE45DE1D681AD700D37CFD /* SpeechSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1943E6F0D2E838E79C4D8673 /* Pods_speechTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A82897D7D26BDB6E70F3A6EA /* Pods_speechTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +39,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		12AE45E21D681ADD00D37CFD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				12AE45E11D681ADD00D37CFD /* SpeechSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		12AE459F1D6366EF00D37CFD /* speechTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = speechTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12AE45A21D6366EF00D37CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +69,8 @@
 		12AE45C41D6366F200D37CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12AE45D01D6368C200D37CFD /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		12AE45D21D63693C00D37CFD /* actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = actions.swift; sourceTree = "<group>"; };
+		12AE45D91D6805E700D37CFD /* speechTest-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "speechTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		12AE45DE1D681AD700D37CFD /* SpeechSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechSDK.framework; path = "Cognitive-Speech-STT-iOS/iPhoneSimulator/SpeechSDK.framework"; sourceTree = "<group>"; };
 		47B74C6379E1A21F64CA048A /* Pods-speechTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-speechTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-speechTest/Pods-speechTest.release.xcconfig"; sourceTree = "<group>"; };
 		A82897D7D26BDB6E70F3A6EA /* Pods_speechTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_speechTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F76212EC0378C58F3DD76B9F /* Pods-speechTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-speechTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-speechTest/Pods-speechTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +82,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1943E6F0D2E838E79C4D8673 /* Pods_speechTest.framework in Frameworks */,
+				12AE45E01D681ADD00D37CFD /* SpeechSDK.framework in Frameworks */,
+				12AE45DF1D681AD700D37CFD /* SpeechSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +107,8 @@
 		12AE45961D6366EF00D37CFD = {
 			isa = PBXGroup;
 			children = (
+				12AE45DE1D681AD700D37CFD /* SpeechSDK.framework */,
+				12AE45D91D6805E700D37CFD /* speechTest-Bridging-Header.h */,
 				12AE45A11D6366EF00D37CFD /* speechTest */,
 				12AE45B61D6366F200D37CFD /* speechTestTests */,
 				12AE45C11D6366F200D37CFD /* speechTestUITests */,
@@ -168,6 +191,7 @@
 				12AE459D1D6366EF00D37CFD /* Resources */,
 				5E7D3499F68D7285A1FE9A1A /* Embed Pods Frameworks */,
 				56DB9F9AE1DF9E56542A0468 /* Copy Pods Resources */,
+				12AE45E21D681ADD00D37CFD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -226,6 +250,7 @@
 				TargetAttributes = {
 					12AE459E1D6366EF00D37CFD = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 53JL74YP2J;
 					};
 					12AE45B21D6366F200D37CFD = {
 						CreatedOnToolsVersion = 7.3;
@@ -413,11 +438,9 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -432,7 +455,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -458,9 +482,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -471,7 +494,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -483,10 +507,19 @@
 			baseConfigurationReference = F76212EC0378C58F3DD76B9F /* Pods-speechTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Cognitive-Speech-STT-iOS/iPhoneSimulator",
+				);
 				INFOPLIST_FILE = speechTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				New_Setting = "";
 				PRODUCT_BUNDLE_IDENTIFIER = me.brettberry.speechTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "speechTest-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -495,10 +528,19 @@
 			baseConfigurationReference = 47B74C6379E1A21F64CA048A /* Pods-speechTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Cognitive-Speech-STT-iOS/iPhoneSimulator",
+				);
 				INFOPLIST_FILE = speechTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				New_Setting = "";
 				PRODUCT_BUNDLE_IDENTIFIER = me.brettberry.speechTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "speechTest-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -4,7 +4,7 @@
 use_frameworks!
 
 target 'speechTest' do
- pod 'Alamofire'
+ pod 'Alamofire', '~> 2.0'
  pod 'PromiseKit'
  pod 'SwiftyJSON'
 end

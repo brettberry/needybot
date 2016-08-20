@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (3.4.1)
+  - Alamofire (2.0.2)
   - OMGHTTPURLRQ (3.2.0):
     - OMGHTTPURLRQ/RQ (= 3.2.0)
   - OMGHTTPURLRQ/FormURLEncode (3.2.0)
@@ -22,12 +22,12 @@ PODS:
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
-  - Alamofire
+  - Alamofire (~> 2.0)
   - PromiseKit
   - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  Alamofire: 8edbab00802a752bb5240cc2abe70e7e881488ad
   OMGHTTPURLRQ: 1e54807cb7d5dbb506926e53498e1e9ac5720c79
   PromiseKit: 3a8a529c0571f8c2c423dba0897ff39bc060bf92
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a

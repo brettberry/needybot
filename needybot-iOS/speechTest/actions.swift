@@ -22,7 +22,6 @@ func makeRequest() {
     var finalURL: NSURL?
     
     Alamofire.download(.POST, "http://localhost:3000/speech", parameters: speechParams, encoding: .JSON, headers: requestHeaders) { tempURL, response in
-        
         let fileManager = NSFileManager.defaultManager()
         let directoryURL = fileManager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0]
         let pathComponent = response.suggestedFilename
@@ -53,8 +52,6 @@ func makeRequest() {
         }
     }
 }
-
-
 
 
 
