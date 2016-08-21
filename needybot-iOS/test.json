@@ -1,0 +1,46 @@
+{
+    "query": "let's wake up at 7 AM tomorrow",
+    "intents": [
+                {
+                "intent": "None",
+                "score": 0.7775265
+                },
+                {
+                "intent": "WakeUp",
+                "score": 7.363338E-12,
+                "actions": [
+                            {
+                            "triggered": false,
+                            "name": "WakeUp",
+                            "parameters": [
+                                           {
+                                           "name": "Time",
+                                           "required": true,
+                                           "value": null
+                                           }
+                                           ]
+                            }
+                            ]
+                }
+                ],
+    "entities": [
+            {
+                 "entity": "7 am",
+                 "type": "builtin.datetime.time",
+                 "startIndex": 17,
+                 "endIndex": 20,
+                 "resolution": {
+                    "time": "T07"
+                    }
+            },
+            {
+                 "entity": "tomorrow",
+                 "type": "builtin.datetime.date",
+                 "startIndex": 22,
+                 "endIndex": 29,
+                 "resolution": {
+                    "date": "2016-08-21"
+                 }
+            }
+                 ]
+}

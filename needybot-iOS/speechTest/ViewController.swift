@@ -12,11 +12,9 @@ import UIKit
 class ViewController: UIViewController, SpeechRecognitionProtocol {
     
     @IBOutlet weak var recordingButton: UIButton!
-    
-    
+
     let language = "en-us"
     let mode = SpeechRecognitionMode.ShortPhrase
-    let path = NSBundle.mainBundle().pathForResource("settings", ofType: "plist")
     
     var microphoneClient: MicrophoneRecognitionClient!
 
@@ -24,18 +22,27 @@ class ViewController: UIViewController, SpeechRecognitionProtocol {
         super.viewDidLoad()
 //        makeRequest()
         
-        microphoneClient = SpeechRecognitionServiceFactory.createMicrophoneClient(mode,
-                                                                                  withLanguage: language,
-                                                                                  withPrimaryKey: microsoftPrimaryKey,
-                                                                                  withSecondaryKey: microsoftSecondaryKey,
-                                                                                  withProtocol: self)
+//        microphoneClient = SpeechRecognitionServiceFactory.createMicrophoneClientWithIntent(language,
+//                                                                         withPrimaryKey: microsoftPrimaryKey,
+//                                                                         withSecondaryKey: microsoftSecondaryKey,
+//                                                                         withLUISAppID: luisAppID,
+//                                                                         withLUISSecret: luisSecret,
+//                                                                         withProtocol: self)
+        
+        let path = NSBundle.mainBundle().pathForResource("test", ofType: "json")!
+        let fileData = try! NSData(contentsOfFile: path, options: NSDataReadingOptions.DataReadingMappedIfSafe)
+        receiveIntentData(fileData)
+//        receiveIntentBody(fileContents!)
+        
+//        let fileContents = try! String(contentsOfFile: path)
+//        receiveIntentBody(fileContents)
     }
     
     @IBAction func record(sender: AnyObject) {
-        let status = microphoneClient.startMicAndRecognition()
-        if status > 0 {
-            print(status)
-        }
+//        let status = microphoneClient.startMicAndRecognition()
+//        if status > 0 {
+//            print(status)
+//        }
     }
 
     func onPartialResponseReceived(partialResult: String!) {
@@ -52,6 +59,10 @@ class ViewController: UIViewController, SpeechRecognitionProtocol {
     
     func onMicrophoneStatus(recording: Bool) {
         print(recording)
+    }
+    
+    func onIntentReceived(intent: IntentResult!) {
+//        receiveIntentBody(intent.Body)
     }
 
 }

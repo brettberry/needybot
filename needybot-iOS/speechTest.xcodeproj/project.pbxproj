@@ -15,10 +15,19 @@
 		12AE45B81D6366F200D37CFD /* speechTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE45B71D6366F200D37CFD /* speechTestTests.swift */; };
 		12AE45C31D6366F200D37CFD /* speechTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE45C21D6366F200D37CFD /* speechTestUITests.swift */; };
 		12AE45D11D6368C200D37CFD /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE45D01D6368C200D37CFD /* constants.swift */; };
-		12AE45D31D63693C00D37CFD /* actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE45D21D63693C00D37CFD /* actions.swift */; };
+		12AE45D31D63693C00D37CFD /* ivonaActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE45D21D63693C00D37CFD /* ivonaActions.swift */; };
 		12AE45DF1D681AD700D37CFD /* SpeechSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12AE45DE1D681AD700D37CFD /* SpeechSDK.framework */; };
 		12AE45E01D681ADD00D37CFD /* SpeechSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12AE45DE1D681AD700D37CFD /* SpeechSDK.framework */; };
 		12AE45E11D681ADD00D37CFD /* SpeechSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 12AE45DE1D681AD700D37CFD /* SpeechSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		12AE45E41D68FF5200D37CFD /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 12AE45E31D68FF5200D37CFD /* test.json */; };
+		12AE45E61D69001600D37CFD /* luisActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE45E51D69001600D37CFD /* luisActions.swift */; };
+		12AE45E91D6A3D6100D37CFD /* IntentQueryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE45E81D6A3D6100D37CFD /* IntentQueryResult.swift */; };
+		12AE45EB1D6A3DD100D37CFD /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE45EA1D6A3DD100D37CFD /* JSONDecodable.swift */; };
+		12AE45ED1D6A3E7800D37CFD /* Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE45EC1D6A3E7800D37CFD /* Intent.swift */; };
+		12AE45EF1D6A3E9100D37CFD /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE45EE1D6A3E9100D37CFD /* Entity.swift */; };
+		12AE45F21D6A4A5E00D37CFD /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE45F11D6A4A5E00D37CFD /* Action.swift */; };
+		12AE45F41D6A4A7C00D37CFD /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE45F31D6A4A7C00D37CFD /* Parameter.swift */; };
+		12AE45F61D6A4E2A00D37CFD /* Resolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE45F51D6A4E2A00D37CFD /* Resolution.swift */; };
 		1943E6F0D2E838E79C4D8673 /* Pods_speechTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A82897D7D26BDB6E70F3A6EA /* Pods_speechTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,9 +77,18 @@
 		12AE45C21D6366F200D37CFD /* speechTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = speechTestUITests.swift; sourceTree = "<group>"; };
 		12AE45C41D6366F200D37CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12AE45D01D6368C200D37CFD /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
-		12AE45D21D63693C00D37CFD /* actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = actions.swift; sourceTree = "<group>"; };
+		12AE45D21D63693C00D37CFD /* ivonaActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ivonaActions.swift; sourceTree = "<group>"; };
 		12AE45D91D6805E700D37CFD /* speechTest-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "speechTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		12AE45DE1D681AD700D37CFD /* SpeechSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechSDK.framework; path = "Cognitive-Speech-STT-iOS/iPhoneSimulator/SpeechSDK.framework"; sourceTree = "<group>"; };
+		12AE45E31D68FF5200D37CFD /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		12AE45E51D69001600D37CFD /* luisActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = luisActions.swift; sourceTree = "<group>"; };
+		12AE45E81D6A3D6100D37CFD /* IntentQueryResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntentQueryResult.swift; sourceTree = "<group>"; };
+		12AE45EA1D6A3DD100D37CFD /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONDecodable.swift; path = ../JSONDecodable.swift; sourceTree = "<group>"; };
+		12AE45EC1D6A3E7800D37CFD /* Intent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Intent.swift; path = ../Intent.swift; sourceTree = "<group>"; };
+		12AE45EE1D6A3E9100D37CFD /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Entity.swift; path = ../Entity.swift; sourceTree = "<group>"; };
+		12AE45F11D6A4A5E00D37CFD /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		12AE45F31D6A4A7C00D37CFD /* Parameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
+		12AE45F51D6A4E2A00D37CFD /* Resolution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resolution.swift; sourceTree = "<group>"; };
 		47B74C6379E1A21F64CA048A /* Pods-speechTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-speechTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-speechTest/Pods-speechTest.release.xcconfig"; sourceTree = "<group>"; };
 		A82897D7D26BDB6E70F3A6EA /* Pods_speechTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_speechTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F76212EC0378C58F3DD76B9F /* Pods-speechTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-speechTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-speechTest/Pods-speechTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +125,7 @@
 		12AE45961D6366EF00D37CFD = {
 			isa = PBXGroup;
 			children = (
+				12AE45E31D68FF5200D37CFD /* test.json */,
 				12AE45DE1D681AD700D37CFD /* SpeechSDK.framework */,
 				12AE45D91D6805E700D37CFD /* speechTest-Bridging-Header.h */,
 				12AE45A11D6366EF00D37CFD /* speechTest */,
@@ -138,7 +157,9 @@
 				12AE45AB1D6366F000D37CFD /* LaunchScreen.storyboard */,
 				12AE45AE1D6366F000D37CFD /* Info.plist */,
 				12AE45D01D6368C200D37CFD /* constants.swift */,
-				12AE45D21D63693C00D37CFD /* actions.swift */,
+				12AE45E71D69002200D37CFD /* Actions */,
+				12AE45F01D6A3EC900D37CFD /* Model */,
+				12AE45EA1D6A3DD100D37CFD /* JSONDecodable.swift */,
 			);
 			path = speechTest;
 			sourceTree = "<group>";
@@ -159,6 +180,28 @@
 				12AE45C41D6366F200D37CFD /* Info.plist */,
 			);
 			path = speechTestUITests;
+			sourceTree = "<group>";
+		};
+		12AE45E71D69002200D37CFD /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				12AE45D21D63693C00D37CFD /* ivonaActions.swift */,
+				12AE45E51D69001600D37CFD /* luisActions.swift */,
+			);
+			name = Actions;
+			sourceTree = "<group>";
+		};
+		12AE45F01D6A3EC900D37CFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				12AE45E81D6A3D6100D37CFD /* IntentQueryResult.swift */,
+				12AE45EC1D6A3E7800D37CFD /* Intent.swift */,
+				12AE45F11D6A4A5E00D37CFD /* Action.swift */,
+				12AE45F31D6A4A7C00D37CFD /* Parameter.swift */,
+				12AE45EE1D6A3E9100D37CFD /* Entity.swift */,
+				12AE45F51D6A4E2A00D37CFD /* Resolution.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		B271603E4D0D8BD27253BFD0 /* Pods */ = {
@@ -288,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12AE45AD1D6366F000D37CFD /* LaunchScreen.storyboard in Resources */,
+				12AE45E41D68FF5200D37CFD /* test.json in Resources */,
 				12AE45AA1D6366F000D37CFD /* Assets.xcassets in Resources */,
 				12AE45A81D6366F000D37CFD /* Main.storyboard in Resources */,
 			);
@@ -363,8 +407,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				12AE45A51D6366F000D37CFD /* ViewController.swift in Sources */,
-				12AE45D31D63693C00D37CFD /* actions.swift in Sources */,
+				12AE45ED1D6A3E7800D37CFD /* Intent.swift in Sources */,
+				12AE45E61D69001600D37CFD /* luisActions.swift in Sources */,
+				12AE45F61D6A4E2A00D37CFD /* Resolution.swift in Sources */,
+				12AE45F21D6A4A5E00D37CFD /* Action.swift in Sources */,
+				12AE45EB1D6A3DD100D37CFD /* JSONDecodable.swift in Sources */,
+				12AE45D31D63693C00D37CFD /* ivonaActions.swift in Sources */,
+				12AE45EF1D6A3E9100D37CFD /* Entity.swift in Sources */,
+				12AE45E91D6A3D6100D37CFD /* IntentQueryResult.swift in Sources */,
 				12AE45A31D6366EF00D37CFD /* AppDelegate.swift in Sources */,
+				12AE45F41D6A4A7C00D37CFD /* Parameter.swift in Sources */,
 				12AE45D11D6368C200D37CFD /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
