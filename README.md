@@ -1,5 +1,4 @@
-Needybot
-----
+# Needybot
 
 ## Author
 
